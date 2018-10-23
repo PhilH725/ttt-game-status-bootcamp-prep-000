@@ -14,3 +14,7 @@ WIN_COMBINATIONS = [
   [0, 4, 8], #topleft to botright diag
   [2, 4, 6] #topright to botleft diag
 ]
+
+def won?(board)
+  
+end
