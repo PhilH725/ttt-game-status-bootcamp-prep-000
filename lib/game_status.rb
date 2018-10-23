@@ -22,6 +22,8 @@ def won?(board)
     end
     if three_ina_row
       return true
+    else
+      return false
     end
   end
 end
