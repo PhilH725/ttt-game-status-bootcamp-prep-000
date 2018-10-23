@@ -24,7 +24,6 @@ def won?(board)
       return true
     end
   end
-  if not three_x
-    return false
+  false
   end
 end
