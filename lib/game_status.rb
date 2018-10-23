@@ -20,10 +20,10 @@ def won?(board)
     three_x = combo.all? do |token|
       board[token] == "X"
     end
-    if three_x
-      return combo
-    else
-      return false
-    end
+  end
+  if three_x
+    return combo
+  else
+    return false
   end
 end
