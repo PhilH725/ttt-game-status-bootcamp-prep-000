@@ -21,7 +21,7 @@ def won?(board)
       token == "X"
     end
     if three_x
-      return true
+      return combo
     else
       return false
     end
