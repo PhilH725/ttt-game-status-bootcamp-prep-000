@@ -45,5 +45,5 @@ end
 
 def winner(board)
   winning_row = won?(board)
-  
+  return winning_row[0]
 end
