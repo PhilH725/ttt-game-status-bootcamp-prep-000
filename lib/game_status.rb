@@ -15,16 +15,17 @@ WIN_COMBINATIONS = [
   [2, 4, 6] #topright to botleft diag
 ]
 
-def won?(board)
+"""def won?(board)
   WIN_COMBINATIONS.each do |combo|
-    if board[token][combo[0]] == "X" and board[token][combo[1]] == "X" and board[token][combo[2]] == "X"
-      return combo
-    #three_x = combo.all? do |token|
-    #  board[token] == "X"
+    three_x = combo.all? do |token|
+      board[token] == "X"
     end
     if three_x
       return true
     end
   end
   false
-end
+end"""
+
+def won?(board)
+  WIN_COMBINATIONS.each do
