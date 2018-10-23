@@ -20,11 +20,7 @@ def won?(board)
     three_x = combo.all? do |token|
       token == "X"
     end
-  WIN_COMBINATIONS.each do |combo|
-    three_o = combo.all? do |token|
-      token == "O"
-    end
-    if three_x or three_o
+    if three_x
       return true
     else
       return false
