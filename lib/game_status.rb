@@ -19,8 +19,8 @@ def won?(board)
   WIN_COMBINATIONS.each do |combo|
     if board[token][combo[0]] == "X" and board[token][combo[1]] == "X" and board[token][combo[2]] == "X"
       return combo
-    three_x = combo.all? do |token|
-      board[token] == "X"
+    #three_x = combo.all? do |token|
+    #  board[token] == "X"
     end
     if three_x
       return true
