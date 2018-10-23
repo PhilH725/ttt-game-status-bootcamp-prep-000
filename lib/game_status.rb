@@ -15,18 +15,6 @@ WIN_COMBINATIONS = [
   [2, 4, 6] #topright to botleft diag
 ]
 
-"""def won?(board)
-  WIN_COMBINATIONS.each do |combo|
-    three_x = combo.all? do |token|
-      board[token] == 'X'
-    end
-    if three_x
-      return true
-    end
-  end
-  false
-end"""
-
 def won?(board)
   WIN_COMBINATIONS.each do |combo|
     position_1 = board[combo[0]]
@@ -37,4 +25,8 @@ def won?(board)
     end
   end
   false
+end
+
+def full?(board)
+  board.each
 end
