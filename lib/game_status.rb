@@ -18,7 +18,7 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.each do |combo|
     three_x = combo.all? do |token|
-      board[token] == "X" or board[token] == "O"
+      board[token] == "X"
     end
     if three_x
       return combo
