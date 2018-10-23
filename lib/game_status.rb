@@ -17,10 +17,12 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |combo|
-    three_ina_row = combo.all? do |token|
+    three_x = combo.all? do |token|
       token == "X"
+    three_o = combo.all? do |token|
+      token == "O"
     end
-    if three_ina_row
+    if three_x or three_o
       return true
     else
       return false
