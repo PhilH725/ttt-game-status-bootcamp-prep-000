@@ -20,5 +20,8 @@ def won?(board)
     three_ina_row = combo.all? do |token|
       token == "X"
     end
+    if three_ina_row
+      return true
+    end
   end
 end
