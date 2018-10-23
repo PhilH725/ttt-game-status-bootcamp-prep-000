@@ -19,6 +19,8 @@ def won?(board)
   WIN_COMBINATIONS.each do |combo|
     three_x = combo.all? do |token|
       token == "X"
+    end
+  WIN_COMBINATIONS.each do |combo|
     three_o = combo.all? do |token|
       token == "O"
     end
